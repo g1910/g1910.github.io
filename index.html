@@ -37,7 +37,7 @@
               </p>
               <p style="text-align:center">
                 <a href="mailto:gaurav.mittal[at]microsoft.com">Email</a> &nbsp/&nbsp
-                <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp
+<!--                <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp-->
                 <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
                 <a href="https://scholar.google.com/citations?user=m-tCelQAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://twitter.com/mitts1910">Twitter</a> &nbsp/&nbsp
@@ -49,17 +49,109 @@
             </td>
           </tr>
         </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>News</heading>
+              <ul>
+                <li> <b> Mar 2022 : </b> Paper accepted at CVPR 2022. Paper details coming soon.
+                <li> <b> Feb 2022 : </b> Patent granted, Patent No.: US 11,238,885 B2.
+                <li> <b> Dec 2021 : </b> Reviewer for CVPR 2022.
+              <ul>
+            </td>
+          </tr>
+        </tbody></table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in computer vision, automated machine learning (AutoML), self-supervised learning and meta learning.
+                I'm interested in computer vision, multmodal machine learning, automated machine learning (AutoML), semi-/self-supervised learning and meta learning.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="c5_stop()" onmouseover="c5_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='c5_image'>
+                  <img src='images/metauvfs_iccv.png' width="160"></div>
+                <img src='images/metauvfs_iccv.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function c5_start() {
+                  document.getElementById('c5_image').style.opacity = "1";
+                }
+
+                function c5_stop() {
+                  document.getElementById('c5_image').style.opacity = "0";
+                }
+                c5_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content/ACCV2020/html/Kozerawski_BLT_Balancing_Long-Tailed_Datasets_with_Adversarially-Perturbed_Images_ACCV_2020_paper.html">
+                <papertitle>Unsupervised Few-Shot Action Recognition via Action-Appearance Aligned Meta-Adaptation</papertitle>
+              </a>
+              <br>
+              <a href="https://web.engr.oregonstate.edu/~patravaj/">Jay Patravali*</a>,
+              <strong>Gaurav Mittal*</strong>,
+              <a href="https://scholar.google.com/citations?hl=en&user=x4IFIuYAAAAJ">Ye Yu</a>,
+              <a href="https://web.engr.oregonstate.edu/~lif/">Fuxin Li</a>,
+              <a href="https://www.microsoft.com/en-us/research/people/meic/">Mei Chen</a>
+              <br>
+              <em>ICCV</em>, 2021 <font color="red"><strong>(Oral Presentation, 3% acceptance rate)</strong></font>
+              <br>
+              <a href="https://openaccess.thecvf.com/content/ICCV2021/html/Patravali_Unsupervised_Few-Shot_Action_Recognition_via_Action-Appearance_Aligned_Meta-Adaptation_ICCV_2021_paper.html">paper</a>
+              <p></p>
+              <p>
+                First Unsupervised Meta-learning algorithm for Video Few-Shot action recognition. It comprises a novel Action-Appearance Aligned Meta-adaptation (A3M) module that learns to focus on the action-oriented video features in relation to the appearance features via explicit few-shot episodic meta-learning over unsupervised hard-mined episodes.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="c5_stop()" onmouseover="c5_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='c5_image'>
+                  <img src='images/muse_bmvc.jpeg' width="160"></div>
+                <img src='images/muse_bmvc.jpeg' width="160">
+              </div>
+              <script type="text/javascript">
+                function c5_start() {
+                  document.getElementById('c5_image').style.opacity = "1";
+                }
+
+                function c5_stop() {
+                  document.getElementById('c5_image').style.opacity = "0";
+                }
+                c5_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.bmvc2021-virtualconference.com/conference/papers/paper_0365.html">
+                <papertitle>MUSE: Feature Self-Distillation with Mutual Information and Self-Information</papertitle>
+              </a>
+              <br>
+              <a href="https://yugongg.github.io/">Yu Gong*</a>,
+              <a href="https://scholar.google.com/citations?hl=en&user=x4IFIuYAAAAJ">Ye Yu*</a>,
+              <strong>Gaurav Mittal</strong>,
+              <a href="https://www.cs.sfu.ca/~mori/">Greg Mori</a>,
+              <a href="https://www.microsoft.com/en-us/research/people/meic/">Mei Chen</a>
+              <br>
+              <em>BMVC</em>, 2021
+              <br>
+              <a href="https://www.bmvc2021-virtualconference.com/assets/papers/0365.pdf">paper</a>
+              <p></p>
+              <p>
+                A novel information-theoretic approach to introduce dependency among features of a deep convolutional neural network (CNN). It jointly improve the expressivity of all features extracted from different layers in a CNN using Additive Information and Multiplicative Information.
+              </p>
+            </td>
+          </tr>
 
           <tr onmouseout="c5_stop()" onmouseover="c5_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -95,7 +187,7 @@
               <br>
               <a href="https://openaccess.thecvf.com/content/ACCV2020/papers/Kozerawski_BLT_Balancing_Long-Tailed_Datasets_with_Adversarially-Perturbed_Images_ACCV_2020_paper.pdf">paper</a> /
               <a href="https://github.com/JKozerawski/BLT">code</a> /
-              <a href="https://www.youtube.com/watch?v=stMSOwrJToU&feature=youtu.be&ab_channel=J%C4%99drzejKozerawski">video
+              <a href="https://www.youtube.com/watch?v=stMSOwrJToU&feature=youtu.be&ab_channel=J%C4%99drzejKozerawski">video</a>
               <p></p>
               <p>
                 A novel data augmentation technique that uses gradient-ascent to generate extra training samples for tail classes in a long-tail class distribution to improve generalization performance of a image classifier for real-world datasets exhibiting long tail. BLT avoids dedicated generative networks for image generation, thereby significantly reducing training time and compute.
