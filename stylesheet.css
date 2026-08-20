@@ -115,9 +115,14 @@ name {
   width: 160px;
   height: 160px;
   position: absolute;
+  opacity: 0;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
+}
+
+.one:hover .two {
+  opacity: 1;
 }
 
 .fade {
@@ -128,4 +133,8 @@ name {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+.oral {
+  color: red;
 }
