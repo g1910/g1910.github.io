@@ -30,10 +30,13 @@
               <p style="text-align:center">
                 <name>Gaurav Mittal</name>
               </p>
-              <p>I am a Principal Researcher at Microsoft Cloud+AI where I work on the research and development of Computer Vision and Machine Learning related products.
+              <p>I am a Principal Researcher and Tech Lead at Microsoft, where I work on GitHub Copilot. My current work is the post-training of coding models and the evaluation of the agents built on them: RL post-training for <a href="#nes-blog">Next Edit Suggestions</a> and Copilot CLI, and process-level evaluation for <a href="#agentlens">coding</a>, <a href="#sequential-execution">computer-use</a>, and cybersecurity agents.
               </p>
               <p>
-                I am currently pursuing Multimodal research and development as part of the Responsible AI pillar under Azure Cognitive Services, supporting products like <a href="https://azure.microsoft.com/en-us/products/ai-services/ai-content-safety">Azure AI Content Safety</a> and <a href="https://azure.microsoft.com/en-us/products/ai-services/openai-service">Azure OpenAI</a>. Previously, I have worked on AutoML as part of the <a href="https://www.customvision.ai/">Microsoft Custom Vision Service</a>. I did my Master's in Computer Vision at Robotics Institute, Carnegie Mellon University where I worked with Prof. Kris Kitani on model compression and <a href="https://github.com/g1910/HyperNetworks">Hypernetworks</a>. I have also worked at Amazon as a Software Development Engineer. I graduated with a B.Tech. in Computer Science and Engineering from Indian Institute of Technology Ropar with the President of India Gold Medal. I have won the Microsoft Imagine Cup India and Indian National Academy of Engineering Innovate Student Project Award in 2016 for my project <a href="https://news.microsoft.com/en-in/features/satya-nadella-meets-millennials-empowerindia/">SpotGarbage</a>.
+                I have also worked on Multimodal generation and Responsible AI, taking multimodal content safety models from prototype to General Availability on Azure and publishing at CVPR, ICCV, ICLR, and ICML, supporting products like <a href="https://azure.microsoft.com/en-us/products/ai-services/ai-content-safety">Azure AI Content Safety</a> and <a href="https://azure.microsoft.com/en-us/products/ai-services/openai-service">Azure OpenAI</a>. Previously, I have worked on AutoML as part of the <a href="https://www.customvision.ai/">Microsoft Custom Vision Service</a>. Multimodal understanding is crucial: computer-use agents can still fail at the perception layer as often as at the reasoning layer, and <a href="#precisioncua">pixel-precise grounding</a> is a vision problem before it is an agent problem.
+              </p>
+              <p>
+                I did my Master's in Computer Vision at Robotics Institute, Carnegie Mellon University where I worked with Prof. Kris Kitani on model compression and <a href="https://github.com/g1910/HyperNetworks">Hypernetworks</a>. I have also worked at Amazon as a Software Development Engineer. I graduated with a B.Tech. in Computer Science and Engineering from Indian Institute of Technology Ropar with the President of India Gold Medal. I have won the Microsoft Imagine Cup India and Indian National Academy of Engineering Innovate Student Project Award in 2016 for my project <a href="https://news.microsoft.com/en-in/features/satya-nadella-meets-millennials-empowerindia/">SpotGarbage</a>.
               </p>
               <p style="text-align:center">
                 <a href="mailto:gaurav[dot]mittal[dot]191013[at]gmail[dot]com">Email</a> &nbsp;/&nbsp;
@@ -55,12 +58,12 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>News</heading>
               <ul>
-                <li> <b> July 2022 : </b> Paper accepted at ECCV 2022 (Oral) (details coming soon).</li>
-                <li> <b> May 2022 : </b> Outstanding Reviewer for CVPR 2022.</li>
-                <li> <b> May 2022 : </b> Reviewer for ECCV 2022.</li>
-                <li> <b> Mar 2022 : </b> GateHUB accepted at CVPR 2022.</li>
-                <li> <b> Feb 2022 : </b> Patent granted, Patent No.: US 11,238,885 B2.</li>
-                <li> <b> Dec 2021 : </b> Reviewer for CVPR 2022.</li>
+                <li> <b> July 2026 : </b> Presented <a href="#pisces">PISCES</a> at ICML 2026 in Seoul, South Korea.</li>
+                <li> <b> May 2026 : </b> AgentLens preprint released (<a href="https://arxiv.org/abs/2605.12925">arXiv 2605.12925</a>).</li>
+                <li> <b> May 2026 : </b> "<a href="https://github.blog/ai-and-ml/generative-ai/validating-agentic-behavior-when-correct-isnt-deterministic/">Validating Agentic Behavior When 'Correct' Isn't Deterministic</a>" published on the GitHub Blog; companion preprint <a href="https://arxiv.org/abs/2605.03159">arXiv 2605.03159</a>.</li>
+                <li> <b> Apr 2026 : </b> PrecisionCUA preprint released (<a href="https://arxiv.org/abs/2604.13019">arXiv 2604.13019</a>).</li>
+                <li> <b> Feb 2026 : </b> "<a href="https://code.visualstudio.com/blogs/2026/02/26/long-distance-nes">Building Long-Distance Next Edit Suggestions</a>" published on the Visual Studio Code Blog.</li>
+                <li> <b> Feb 2026 : </b> <a href="#tracking-guided-4d">Tracking-Guided 4D Generation</a> and <a href="#scenes-as-tokens">Scenes as Tokens</a> accepted at CVPR 2026.</li>
               </ul>
             </td>
           </tr>
@@ -71,7 +74,19 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in computer vision, multimodal machine learning, automated machine learning (AutoML), semi-/self-supervised learning and meta learning.
+                I work on three connected problems. Post-training coding models so they improve at tasks that take many steps. Evaluating agents in a way that separates a correct method from a lucky outcome. Grounding agents in real interfaces, where the failure is often perception rather than reasoning.
+              </p>
+              <p>
+                <strong>Coding agents and RL post-training:</strong> RL post-training for Next Edit Suggestions and Copilot CLI. (<a href="#nes-blog">NES blog post</a>)
+              </p>
+              <p>
+                <strong>Agentic evaluation:</strong> process-level scoring, deterministic benchmarks, and validating sequential execution in autonomous agents. (<a href="#agentlens">AgentLens</a>, <a href="#codebreaker-bench">Codebreaker-Bench</a>, <a href="#sequential-execution">sequential-execution validation</a>)
+              </p>
+              <p>
+                <strong>Computer use and visual grounding:</strong> pixel-precise GUI grounding and autonomous UX testing. (<a href="#precisioncua">PrecisionCUA</a>)
+              </p>
+              <p>
+                <strong>Multimodal generation and safety:</strong> text-to-video and image generation, content safety at scale. (<a href="#pisces">PISCES</a>, <a href="#hummingbird">Hummingbird</a>)
               </p>
             </td>
           </tr>
@@ -84,7 +99,7 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
+          <tr id="agentlens">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/agentlens_26.jpg' width="160" alt="Histogram of AgentLens quality scores separating Lucky, Solid, and Ideal trajectories">
@@ -113,7 +128,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr id="sequential-execution">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/validating_agent_behavior_26.jpg' width="160" alt="Screen states captured across two test runs used to validate agentic behavior">
@@ -139,7 +154,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr id="codebreaker-bench">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/codebreaker_bench.jpg' width="160" alt="Codebreaker-Bench salient, causal, and identity layers linking a victim endpoint to a C2 destination">
@@ -160,7 +175,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr id="precisioncua">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/precisioncua_26.jpg' width="160" alt="PrecisionCUA architecture: extension host and DOM renderer bridged over a local WebSocket channel">
@@ -186,7 +201,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr id="nes-blog">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/longdistance_nes_blog.gif' width="160" alt="Demo of a long-distance Next Edit Suggestion jumping to a related line">
@@ -221,7 +236,7 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr>
+          <tr id="pisces">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <video width="160" height="160" style="object-fit:cover" muted autoplay loop playsinline>
@@ -244,7 +259,9 @@
               <br>
               <em>ICML</em>, 2026
               <br>
-              <a href="https://arxiv.org/abs/2602.01624">arXiv</a>
+              <a href="https://arxiv.org/abs/2602.01624">arXiv</a> /
+              <a href="https://roar-ai.github.io/pisces/">project page</a> /
+              <a href="https://github.com/roar-ai/pisces">code</a>
               <p></p>
               <p>
                 Post-trains text-to-video models using rewards aligned by optimal transport, improving visual quality and semantic alignment with the input text without requiring annotated preference data.
@@ -252,7 +269,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr id="tracking-guided-4d">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/trackingguided_cvpr26.jpg' width="160" alt="Foundation-Tracker 4D generation results compared against DG4D and Animate3D">
@@ -281,7 +298,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr id="scenes-as-tokens">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/scene_as_tokens_cvpr26.jpg' width="160" alt="Qualitative comparison of NDTokenizer3D against 3D-LLaVA on 3D scene understanding tasks">
@@ -369,7 +386,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr id="hummingbird">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/hummingbird_iclr25.jpg' width="160" alt="Hummingbird generated images compared against references across attribute and diversity/fidelity tests">
@@ -488,7 +505,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr id="batman">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/batman_eccv22.jpg' width="160" alt="BATMAN video object segmentation results comparing local and bilateral attention">
@@ -800,7 +817,8 @@
               <a href="https://www.youtube.com/watch?v=cTkCsz5C8zs&amp;ab_channel=KudaPehchano">video</a> /
               <a href="https://github.com/KudaP/SpotGarbage">code</a> /
               <a href="https://dl.acm.org/doi/abs/10.1145/2971648.2971731">paper</a>/
-              <a href="https://github.com/spotgarbage/spotgarbage-GINI">dataset</a>
+              <a href="https://github.com/spotgarbage/spotgarbage-GINI">dataset</a> /
+              <a href="https://news.microsoft.com/en-in/features/satya-nadella-meets-millennials-empowerindia/">coverage</a>
               <p></p>
               <p>
               Designed a fully convolutional network to detect and coarsely segment garbage regions in the image. Built a smartphone app, SpotGarbage, deploying the CNN to make on-the-device detections. Also introduced a new Garbage-In-Images (GINI) dataset.
