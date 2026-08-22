@@ -104,7 +104,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading id="preprints">Preprints &amp; Industry Writing</heading>
+              <heading id="preprints">Preprints &amp; Blogs</heading>
             </td>
           </tr>
         </tbody></table>
@@ -244,9 +244,22 @@
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <div class="pub-filter-wrap">
+        <div class="pub-filter-bar">
+          <input type="radio" name="pubfilter" id="pf-all" autocomplete="off" checked>
+          <label for="pf-all">All</label>
+          <input type="radio" name="pubfilter" id="pf-genai" autocomplete="off">
+          <label for="pf-genai">GenAI</label>
+          <input type="radio" name="pubfilter" id="pf-video" autocomplete="off">
+          <label for="pf-video">Video Understanding</label>
+          <input type="radio" name="pubfilter" id="pf-nlpml" autocomplete="off">
+          <label for="pf-nlpml">NLP / ML</label>
+          <input type="radio" name="pubfilter" id="pf-vision" autocomplete="off">
+          <label for="pf-vision">Vision</label>
+        </div>
+        <table class="pub-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr id="pisces">
+          <tr id="pisces" class="pub-row cat-genai">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <video width="160" height="160" style="object-fit:cover" muted autoplay loop playsinline>
@@ -279,7 +292,7 @@
             </td>
           </tr>
 
-          <tr id="tracking-guided-4d">
+          <tr id="tracking-guided-4d" class="pub-row cat-genai">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/trackingguided_cvpr26.jpg' width="160" alt="Foundation-Tracker 4D generation results compared against DG4D and Animate3D">
@@ -308,7 +321,7 @@
             </td>
           </tr>
 
-          <tr id="scenes-as-tokens">
+          <tr id="scenes-as-tokens" class="pub-row cat-vision">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/scene_as_tokens_cvpr26.jpg' width="160" alt="Qualitative comparison of NDTokenizer3D against 3D-LLaVA on 3D scene understanding tasks">
@@ -337,7 +350,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="pub-row cat-video">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/decafnet_cvpr25.jpg' width="160" alt="DeCafNet accuracy versus inference time compared against prior methods">
@@ -368,7 +381,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="pub-row cat-video">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/losa_wacv25.jpg' width="160" alt="LoSA architecture and mAP comparison against head-only, full backbone, and PETL adaptation">
@@ -396,7 +409,7 @@
             </td>
           </tr>
 
-          <tr id="hummingbird">
+          <tr id="hummingbird" class="pub-row cat-genai">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/hummingbird_iclr25.jpg' width="160" alt="Hummingbird generated images compared against references across attribute and diversity/fidelity tests">
@@ -427,7 +440,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="pub-row cat-nlpml">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/rbe_acl23.jpg' width="160" alt="Rule By Example architecture: rule encoder and text encoder aligned via a similarity metric">
@@ -457,7 +470,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="pub-row cat-video">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/protege_cvpr23.jpg' width="160" alt="ProTeGe attention maps for untrimmed pretraining compared against trimmed pretraining">
@@ -486,7 +499,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="pub-row cat-video">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/pivotal_cvpr23.jpg' width="160" alt="PivoTAL localization confidence compared against ground truth and an ablation without scene prior">
@@ -515,7 +528,7 @@
             </td>
           </tr>
 
-          <tr id="batman">
+          <tr id="batman" class="pub-row cat-video">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/batman_eccv22.jpg' width="160" alt="BATMAN video object segmentation results comparing local and bilateral attention">
@@ -543,7 +556,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="pub-row cat-video">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two">
@@ -572,7 +585,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="pub-row cat-video">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two">
@@ -601,7 +614,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="pub-row cat-nlpml">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two">
@@ -631,7 +644,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="pub-row cat-nlpml">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two">
@@ -664,7 +677,7 @@
           </tr>
 
 
-          <tr>
+          <tr class="pub-row cat-nlpml">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two">
@@ -696,7 +709,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="pub-row cat-genai">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two"><video  width=100% height=100% muted autoplay loop>
@@ -726,7 +739,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="pub-row cat-genai">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/iclr_deepgen.png' width="160" alt="Image built up incrementally from a sequence of scene graphs">
@@ -755,7 +768,7 @@
           </tr>
 
 
-          <tr>
+          <tr class="pub-row cat-genai">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/iccv_attentive.gif' width="160" alt="Video frames generated from a caption using attention">
@@ -781,7 +794,7 @@
           </tr>
 
 
-          <tr>
+          <tr class="pub-row cat-genai">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/acmm_sync_draw.gif' width="160" alt="Video frames generated progressively by Sync-DRAW">
@@ -805,7 +818,7 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="pub-row cat-vision">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='images/spot_garbage.png' width="160" alt="SpotGarbage app segmenting garbage regions in a street photo">
@@ -837,7 +850,7 @@
           </tr>
 
 
-          <tr>
+          <tr class="pub-row cat-vision">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two">
@@ -867,6 +880,7 @@
 
 
         </tbody></table>
+        </div>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>

@@ -138,3 +138,58 @@ span.highlight {
 .oral {
   color: red;
 }
+
+.pub-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 4px 20px 20px;
+}
+
+.pub-filter-bar input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.pub-filter-bar label {
+  display: inline-block;
+  padding: 5px 14px;
+  border: 1px solid #1772d0;
+  border-radius: 14px;
+  color: #1772d0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color .15s ease-in-out, color .15s ease-in-out;
+}
+
+.pub-filter-bar label:hover {
+  background-color: #f09228;
+  border-color: #f09228;
+  color: #fff;
+}
+
+.pub-filter-bar input[type="radio"]:checked + label {
+  background-color: #1772d0;
+  color: #fff;
+}
+
+.pub-filter-wrap:has(#pf-genai:checked) .pub-table tr.pub-row:not(.cat-genai) {
+  display: none;
+}
+
+.pub-filter-wrap:has(#pf-video:checked) .pub-table tr.pub-row:not(.cat-video) {
+  display: none;
+}
+
+.pub-filter-wrap:has(#pf-nlpml:checked) .pub-table tr.pub-row:not(.cat-nlpml) {
+  display: none;
+}
+
+.pub-filter-wrap:has(#pf-vision:checked) .pub-table tr.pub-row:not(.cat-vision) {
+  display: none;
+}
