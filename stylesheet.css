@@ -193,3 +193,7 @@ span.highlight {
 .pub-filter-wrap:has(#pf-vision:checked) .pub-table tr.pub-row:not(.cat-vision) {
   display: none;
 }
+
+.pub-filter-wrap:has(#pf-agents:checked) .pub-table tr.pub-row:not(.cat-agents) {
+  display: none;
+}

@@ -66,9 +66,9 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading id="news">News</heading>
               <ul>
+                <li> <b> Sep 2026 : </b> <a href="#agentlens">AgentLens</a> accepted at NeurIPS 2026 (Datasets and Benchmarks Track, poster).</li>
                 <li> <b> July 2026 : </b> Presented <a href="#pisces">PISCES</a> at ICML 2026 in Seoul, South Korea.</li>
                 <li> <b> Jun 2026 : </b> Patent granted, <a href="#patents">US 12,657,465</a>, "Knowledge Balancing Self-Distillation with Adaptive Mutual Information (AMI)."</li>
-                <li> <b> May 2026 : </b> AgentLens preprint released (<a href="https://arxiv.org/abs/2605.12925">arXiv 2605.12925</a>).</li>
                 <li> <b> May 2026 : </b> "<a href="https://github.blog/ai-and-ml/generative-ai/validating-agentic-behavior-when-correct-isnt-deterministic/">Validating Agentic Behavior When 'Correct' Isn't Deterministic</a>" published on the GitHub Blog; companion preprint <a href="https://arxiv.org/abs/2605.03159">arXiv 2605.03159</a>.</li>
                 <li> <b> Apr 2026 : </b> Patent granted, <a href="#patents">US 12,608,936</a>, "Prior-Driven Supervision for Weakly-Supervised Temporal Action Localization."</li>
                 <li> <b> Apr 2026 : </b> PrecisionCUA preprint released (<a href="https://arxiv.org/abs/2604.13019">arXiv 2604.13019</a>).</li>
@@ -109,35 +109,6 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr id="agentlens">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/agentlens_26.jpg' width="160" alt="Histogram of AgentLens quality scores separating Lucky, Solid, and Ideal trajectories">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2605.12925">
-                <papertitle>AgentLens: Revealing The Lucky Pass Problem in SWE-Agent Evaluation</papertitle>
-              </a>
-              <br>
-              Priyam Sahoo,
-              <strong>Gaurav Mittal</strong>,
-              Xiaomin Li,
-              Shengjie Ma,
-              Ben Steenhoek,
-              Pingping Lin,
-              Yu Hu
-              <br>
-              <em>arXiv preprint</em>, May 2026
-              <br>
-              <a href="https://arxiv.org/abs/2605.12925">arXiv</a>
-              <p></p>
-              <p>
-                Shows that outcome-only pass/fail evaluation treats a principled solution and a chaotic trial-and-error process as equivalent, and introduces process-level scoring over 2,614 SWE-agent trajectories that separates lucky passes from solid and ideal solutions.
-              </p>
-            </td>
-          </tr>
-
           <tr id="sequential-execution">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -256,6 +227,8 @@
           <label for="pf-nlpml">NLP / ML</label>
           <input type="radio" name="pubfilter" id="pf-vision" autocomplete="off">
           <label for="pf-vision">Vision</label>
+          <input type="radio" name="pubfilter" id="pf-agents" autocomplete="off">
+          <label for="pf-agents">Agents</label>
         </div>
         <table class="pub-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
@@ -288,6 +261,35 @@
               <p></p>
               <p>
                 Post-trains text-to-video models using rewards aligned by optimal transport, improving visual quality and semantic alignment with the input text without requiring annotated preference data.
+              </p>
+            </td>
+          </tr>
+
+          <tr id="agentlens" class="pub-row cat-agents">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/agentlens_26.jpg' width="160" alt="Histogram of AgentLens quality scores separating Lucky, Solid, and Ideal trajectories">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2605.12925">
+                <papertitle>AgentLens: Revealing The Lucky Pass Problem in SWE-Agent Evaluation</papertitle>
+              </a>
+              <br>
+              Priyam Sahoo,
+              <strong>Gaurav Mittal</strong>,
+              Xiaomin Li,
+              Shengjie Ma,
+              Ben Steenhoek,
+              Pingping Lin,
+              Yu Hu
+              <br>
+              <em>NeurIPS</em>, 2026 (Datasets and Benchmarks Track, poster)
+              <br>
+              <a href="https://arxiv.org/abs/2605.12925">arXiv</a>
+              <p></p>
+              <p>
+                Shows that outcome-only pass/fail evaluation treats a principled solution and a chaotic trial-and-error process as equivalent, and introduces process-level scoring over 2,614 SWE-agent trajectories that separates lucky passes from solid and ideal solutions.
               </p>
             </td>
           </tr>
@@ -577,7 +579,8 @@
               <br>
               <em>CVPR</em>, 2022
               <br>
-              <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Chen_GateHUB_Gated_History_Unit_With_Background_Suppression_for_Online_Action_CVPR_2022_paper.html">paper</a>
+              <a href="https://openaccess.thecvf.com/content/CVPR2022/html/Chen_GateHUB_Gated_History_Unit_With_Background_Suppression_for_Online_Action_CVPR_2022_paper.html">paper</a> /
+              <a href="https://github.com/g1910/GateHUB">code</a>
               <p></p>
               <p>
                 GateHUB introduces a novel gated cross-attention along with future-augmented history and background suppression objective to outperform all existing methods on online action detection task on all public benchmarks.
