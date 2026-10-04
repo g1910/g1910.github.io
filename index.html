@@ -66,12 +66,12 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading id="news">News</heading>
               <ul>
+                <li> <b> Oct 2026 : </b> <a href="#precisioncua">PrecisionCUA</a> accepted at the NeurIPS 2026 Workshop on Agentic AI Benchmarks and Applications for Enterprise Tasks (AABA4ET).</li>
                 <li> <b> Sep 2026 : </b> <a href="#agentlens">AgentLens</a> accepted at NeurIPS 2026 (Datasets and Benchmarks Track, poster).</li>
                 <li> <b> July 2026 : </b> Presented <a href="#pisces">PISCES</a> at ICML 2026 in Seoul, South Korea.</li>
                 <li> <b> Jun 2026 : </b> Patent granted, <a href="#patents">US 12,657,465</a>, "Knowledge Balancing Self-Distillation with Adaptive Mutual Information (AMI)."</li>
                 <li> <b> May 2026 : </b> "<a href="https://github.blog/ai-and-ml/generative-ai/validating-agentic-behavior-when-correct-isnt-deterministic/">Validating Agentic Behavior When 'Correct' Isn't Deterministic</a>" published on the GitHub Blog; companion preprint <a href="https://arxiv.org/abs/2605.03159">arXiv 2605.03159</a>.</li>
                 <li> <b> Apr 2026 : </b> Patent granted, <a href="#patents">US 12,608,936</a>, "Prior-Driven Supervision for Weakly-Supervised Temporal Action Localization."</li>
-                <li> <b> Apr 2026 : </b> PrecisionCUA preprint released (<a href="https://arxiv.org/abs/2604.13019">arXiv 2604.13019</a>).</li>
                 <li> <b> Feb 2026 : </b> "<a href="https://code.visualstudio.com/blogs/2026/02/26/long-distance-nes">Building Long-Distance Next Edit Suggestions</a>" published on the Visual Studio Code Blog.</li>
                 <li> <b> Feb 2026 : </b> <a href="#tracking-guided-4d">Tracking-Guided 4D Generation</a> and <a href="#scenes-as-tokens">Scenes as Tokens</a> accepted at CVPR 2026.</li>
               </ul>
@@ -156,32 +156,6 @@
             </td>
           </tr>
 
-          <tr id="precisioncua">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/precisioncua_26.jpg' width="160" alt="PrecisionCUA architecture: extension host and DOM renderer bridged over a local WebSocket channel">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2604.13019">
-                <papertitle>PrecisionCUA: Iterative Visual Refinement for Pixel-Precise Cursor Grounding in Code Editors</papertitle>
-              </a>
-              <br>
-              Himangi Mittal,
-              <strong>Gaurav Mittal</strong>,
-              Nelson Daniel Troncoso,
-              Yu Hu
-              <br>
-              <em>arXiv preprint</em>, April 2026
-              <br>
-              <a href="https://arxiv.org/abs/2604.13019">arXiv</a>
-              <p></p>
-              <p>
-                Studies pixel-precise cursor grounding for computer-use agents in dense coding interfaces such as VS Code and Cursor, replacing single-shot coordinate prediction with an iterative visual-refinement loop that self-corrects using feedback from prior attempts.
-              </p>
-            </td>
-          </tr>
-
           <tr id="nes-blog">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -219,6 +193,8 @@
         <div class="pub-filter-bar">
           <input type="radio" name="pubfilter" id="pf-all" autocomplete="off" checked>
           <label for="pf-all">All</label>
+          <input type="radio" name="pubfilter" id="pf-agents" autocomplete="off">
+          <label for="pf-agents">Agents</label>
           <input type="radio" name="pubfilter" id="pf-genai" autocomplete="off">
           <label for="pf-genai">GenAI</label>
           <input type="radio" name="pubfilter" id="pf-video" autocomplete="off">
@@ -227,8 +203,6 @@
           <label for="pf-nlpml">NLP / ML</label>
           <input type="radio" name="pubfilter" id="pf-vision" autocomplete="off">
           <label for="pf-vision">Vision</label>
-          <input type="radio" name="pubfilter" id="pf-agents" autocomplete="off">
-          <label for="pf-agents">Agents</label>
         </div>
         <table class="pub-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
@@ -290,6 +264,32 @@
               <p></p>
               <p>
                 Shows that outcome-only pass/fail evaluation treats a principled solution and a chaotic trial-and-error process as equivalent, and introduces process-level scoring over 2,614 SWE-agent trajectories that separates lucky passes from solid and ideal solutions.
+              </p>
+            </td>
+          </tr>
+
+          <tr id="precisioncua" class="pub-row cat-agents">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/precisioncua_26.jpg' width="160" alt="PrecisionCUA architecture: extension host and DOM renderer bridged over a local WebSocket channel">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2604.13019">
+                <papertitle>PrecisionCUA: Iterative Visual Refinement for Pixel-Precise Cursor Grounding in Code Editors</papertitle>
+              </a>
+              <br>
+              Himangi Mittal,
+              <strong>Gaurav Mittal</strong>,
+              Nelson Daniel Troncoso,
+              Yu Hu
+              <br>
+              <em>NeurIPS 2026 Workshop on Agentic AI Benchmarks and Applications for Enterprise Tasks (AABA4ET)</em>
+              <br>
+              <a href="https://arxiv.org/abs/2604.13019">arXiv</a>
+              <p></p>
+              <p>
+                Studies pixel-precise cursor grounding for computer-use agents in dense coding interfaces such as VS Code and Cursor, replacing single-shot coordinate prediction with an iterative visual-refinement loop that self-corrects using feedback from prior attempts.
               </p>
             </td>
           </tr>
